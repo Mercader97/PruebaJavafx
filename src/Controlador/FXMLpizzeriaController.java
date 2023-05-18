@@ -73,7 +73,8 @@ public class FXMLpizzeriaController implements Initializable {
             alerta.setHeaderText("Datos Introducidos");
             alerta.setContentText(c.toString());
             alerta.showAndWait();
-            
+            // informacion
+            System.out.println("info");
             panelpizza.setDisable(false);
         }
     }
