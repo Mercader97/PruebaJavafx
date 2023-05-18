@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.FXMLpizzeriaController">
+   <children>
+      <Pane fx:id="panelsuperior" layoutX="38.0" layoutY="32.0" prefHeight="172.0" prefWidth="535.0">
+         <children>
+            <TextField fx:id="tfnombre" layoutX="94.0" layoutY="54.0" prefHeight="25.0" prefWidth="149.0" />
+            <TextField fx:id="tfdireccion" layoutX="94.0" layoutY="95.0" />
+            <TextField fx:id="tftelefono" layoutX="94.0" layoutY="131.0" />
+            <Button fx:id="btguardardatos" layoutX="373.0" layoutY="131.0" mnemonicParsing="false" onAction="#guardarcliente" text="Guardar Datos cliente" />
+            <Label layoutX="25.0" layoutY="14.0" text="Cliente" />
+            <Label layoutX="36.0" layoutY="58.0" text="Nombre" />
+            <Label layoutX="33.0" layoutY="99.0" text="Direccion" />
+            <Label layoutX="38.0" layoutY="135.0" text="Telefono" />
+         </children>
+      </Pane>
+      <Pane fx:id="panelpizza" layoutX="38.0" layoutY="228.0" prefHeight="137.0" prefWidth="510.0">
+         <children>
+            <ComboBox fx:id="cbpizza" layoutX="29.0" layoutY="44.0" prefWidth="150.0" />
+            <Label layoutX="29.0" layoutY="14.0" text="Pizzas" />
+            <RadioButton fx:id="btpizzagrande" layoutX="204.0" layoutY="14.0" mnemonicParsing="false" text="Grande" />
+            <RadioButton fx:id="btpizzamediana" layoutX="204.0" layoutY="35.0" mnemonicParsing="false" text="Mediana" />
+            <RadioButton fx:id="btpizzapequeña" layoutX="204.0" layoutY="60.0" mnemonicParsing="false" text="Pequeña" />
+         </children>
+      </Pane>
+      <ListView fx:id="listview" layoutX="708.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
